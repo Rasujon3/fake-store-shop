@@ -18,7 +18,7 @@ const SingleProduct = (props) => {
           </button>
           <button className="btn btn-danger">Delete</button>
           {/* <button className="btn btn-info">Details</button> */}
-          <ReactModal></ReactModal>
+          <ReactModal product={props.product}></ReactModal>
         </div>
       </div>
     </div>
