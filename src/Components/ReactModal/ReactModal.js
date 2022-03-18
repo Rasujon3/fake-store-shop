@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
 const ReactModal = (props) => {
-  console.log(props.product);
-  const { id, title, price, description, category, image, rating } =
-    props.product;
+  const { title, price, description, category, image, rating } = props.product;
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -29,9 +27,6 @@ const ReactModal = (props) => {
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
           </Button>
         </Modal.Footer>
       </Modal>

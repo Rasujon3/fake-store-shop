@@ -9,7 +9,6 @@ const AllProducts = ({ setCartCount }) => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-  console.log(products);
   return (
     <div>
       <h1>All Products {products.length}</h1>
