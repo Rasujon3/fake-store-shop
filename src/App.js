@@ -1,10 +1,15 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Menubar from "./Components/Menubar/Menubar";
+import Test from "./Components/Test/Test";
 
 function App() {
+  const count = () => {
+    console.log("hello paici broo");
+  };
   return (
     <div className="App">
-      <h1 className="text-danger">Hello Fakestore Shop</h1>
+      <Test count={count}></Test>
     </div>
   );
 }
