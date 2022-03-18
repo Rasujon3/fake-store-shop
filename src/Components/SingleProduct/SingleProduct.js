@@ -1,10 +1,12 @@
 import React from "react";
+import ReactModal from "../ReactModal/ReactModal";
 import "./SingleProduct.css";
 
 const SingleProduct = (props) => {
   console.log(props.product);
   const { setCartCount } = props;
-  const { title, price, description, category, image, rating } = props.product;
+  const { id, title, price, description, category, image, rating } =
+    props.product;
   return (
     <div className="col-md-4">
       <div className="card p-2 border">
@@ -15,7 +17,8 @@ const SingleProduct = (props) => {
             Add to cart
           </button>
           <button className="btn btn-danger">Delete</button>
-          <button className="btn btn-info">Details</button>
+          {/* <button className="btn btn-info">Details</button> */}
+          <ReactModal></ReactModal>
         </div>
       </div>
     </div>
